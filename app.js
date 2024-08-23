@@ -90,7 +90,7 @@ function addTaskAlert(newTask) {
                     Task Description: ${newTask.description}\n
                     Task Image URL: ${newTask.imgUrl}
                     `;
-  alert(message);
+  window.alert(message);
 }
 
   // 2 - Function
@@ -107,6 +107,7 @@ function addTaskAlert(newTask) {
     };
 
     createTaskComponent(newTask);
+    addTaskAlert(newTask);
 
     // Limpiar el formulario
     document.querySelector('.main__form').reset();
